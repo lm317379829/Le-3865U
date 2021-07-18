@@ -119,23 +119,8 @@ sed -i 's/msgid "NAS"//g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/msgstr "网络存储"//g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 sed -i 's/msgstr "FTP 服务器"/msgstr "FTP设置"/g' package/lean/luci-app-vsftpd/po/zh-cn/vsftpd.po
 
-#luci-app-flowoffload
-sed -i 's/Flow Offload 转发加速/硬件加速/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i 's/Linux Flow offload 转发/Linux Flow OFFload 转发/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i 's/Linux Flow Offload Forwarding 转发/Linux Flow OFFload 转发/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i 's/Linux Flow offload Forwarding  转发/Linux Flow OFFload 转发/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i 's/Turbo ACC 网络加速设置/网络加速设置/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i 's/Turbo ACC 网络加速/网络加速/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
-sed -i '/hw =/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-sed -i '/hw.default/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-sed -i '/hw.rmempty/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-sed -i '/hw.description/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-sed -i '/hw:depends/d'  package/lean/luci-app-flowoffload/luasrc/model/cbi/flowoffload.lua
-
-#luci-app-SFE
-sed -i 's/SFE 转发加速/硬件加速/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
-sed -i 's/Turbo ACC 网络加速/网络加速/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
-sed -i 's/启用 SFE Fast Path 加速/启用 SFE/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
+#luci-app-Turboacc
+sed -i 's/Turbo ACC 网络加速/网络加速/g' package/lean/luci-app-turboacc/po/zh-cn/turboacc.po
 
 #luci-app-vlmcsd
 sed -i 's/KMS 服务器/微软激活/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
