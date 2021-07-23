@@ -123,7 +123,7 @@ sed -i 's/msgstr "FTP 服务器"/msgstr "FTP设置"/g' package/lean/luci-app-vsf
 sed -i 's/Turbo ACC 网络加速/网络加速/g' package/lean/luci-app-turboacc/po/zh-cn/turboacc.po
 
 #luci-app-vlmcsd
-sed -i 's/KMS 服务器/微软激活/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
+sed -i 's/KMS 服务器/微软激活/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.po
 
 #luci-app-adbyby-plus
 sed -i 's/大师 Plus +//g' package/lean/luci-app-adbyby-plus/po/zh-cn/adbyby.po
@@ -183,11 +183,49 @@ sed -i 's/解锁网易云灰色歌曲/网易解锁/g' package/lean/luci-app-unbl
 git clone https://github.com/lisaac/luci-app-dockerman.git
 mv luci-app-dockerman/applications/luci-app-dockerman package/lean/luci-app-dockerman
 rm -rf luci-app-dockerman
-sed -i 's/+docker-ce \\/#+docker-ce \\/g' package/lean/luci-app-dockerman/Makefile
+sed -i 's/+docker \\/#+docker \\/g' package/lean/luci-app-dockerman/Makefile
+sed -i 's/+dockerd \\/#+dockerd \\/g' package/lean/luci-app-dockerman/Makefile
 sed -i 's/存储卷/存储/g' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgid "Docker"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgstr "容器"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "Docker - Events"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "Docker-事件"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "Docker - Configuration"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "Docker-配置"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "DockerMan settings"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "DockerMan配置"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "Auto start"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "启用"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgid "Docker Socket Path"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "Docker Socket位置"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/docker client is connected./{n;s/""/"Docker客户端连接数据概述"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/image can be downloaded from the configured registry./{n;s/""/"从Registry下载镜像."/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Container (%s)/{n;s/""/"Docker-容器 (%s)"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Container/{n;s/""/"Docker-容器"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Images/{n;s/""/"Docker-镜像"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Network/{n;s/""/"Docker-网络"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Networks/{n;s/""/"Docker-网络"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Overview/{n;s/""/"Docker-概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Docker - Volumes/{n;s/""/"Docker-存储"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/DockerMan is a simple docker manager client for LuCI/{n;s/""/"DockerManLuCi中的简易Docker管理器"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/"Error"/{n;s/""/"错误"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/"Fatal"/{n;s/""/"严重错误"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Images overview/{n;s/""/"镜像概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Import Image/{n;s/""/"导入镜像"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/It replaces the daemon registry mirrors with a new set of registry mirrors/{n;s/""/"更换仓库地址"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Networks overview/{n;s/""/"网络概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/with which a container can be created/{n;s/""/"镜像管理页面."/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/On this page, the selected container can be managed./{n;s/""/"容器管理页面."/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/connected docker host/{n;s/""/"网络管理页面."/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Volumes overview/{n;s/""/"存储概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/Warning/{n;s/""/"警告"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+
 
 #luci-app-udpxy
 sed -i 's/udpxy"))/组播转发"))/g' feeds/luci/applications/luci-app-udpxy/luasrc/controller/udpxy.lua
