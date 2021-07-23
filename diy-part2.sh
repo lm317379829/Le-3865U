@@ -212,10 +212,10 @@ echo 'msgid "CONTAINER INFO"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerm
 echo 'msgstr "容器信息"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgid "MOUNTS"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
-echo 'msgstr "挂载点' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "挂载点"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo '' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 echo 'msgid "Docker Daemon settings"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
-echo 'msgstr "Docker Daemon配置' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+echo 'msgstr "Docker Daemon配置"' >>package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/docker client is connected./{n;s/""/"Docker客户端连接数据概述"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/image can be downloaded from the configured registry./{n;s/""/"从Registry下载镜像."/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/Docker - Container (%s)/{n;s/""/"Docker-容器"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
