@@ -225,7 +225,7 @@ sed -i '/Docker - Network/{n;s/""/"Docker-网络"/g}' package/lean/luci-app-dock
 sed -i '/Docker - Networks/{n;s/""/"Docker-网络"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/Docker - Overview/{n;s/""/"Docker-概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/Docker - Volumes/{n;s/""/"Docker-存储"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
-sed -i '/DockerMan is a simple docker manager client for LuCI/{n;s/""/"DockerManLuCi中的简易Docker管理器"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
+sed -i '/DockerMan is a simple docker manager client for LuCI/{n;s/""/"DockerMan的简易Docker管理器"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/"Error"/{n;s/""/"错误"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/"Fatal"/{n;s/""/"严重错误"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
 sed -i '/Images overview/{n;s/""/"镜像概览"/g}' package/lean/luci-app-dockerman/po/zh-cn/dockerman.po
